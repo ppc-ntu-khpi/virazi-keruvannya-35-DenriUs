@@ -1,6 +1,10 @@
 package domain;
  
 public class Exercise { 
+    /**
+     * Method that calculates symmetric time count
+     * @return symmetric time count
+     */
     public static int Calculate(Boolean showExecutionLog) {
         int[] time = new int[2];
         int symmetricTimeCount = 0;
