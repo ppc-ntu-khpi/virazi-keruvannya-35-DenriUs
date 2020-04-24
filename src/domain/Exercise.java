@@ -12,23 +12,21 @@ public class Exercise {
         for (int i = 0; i <= 2; i++) {
             time[0] = i;
 
-            for (int j = 0; j <= 9; j++) {
+            for (int j = 0; j < 6; j++) {
                 time[1] = j;
 
-                if (time[1] < 6) {
-                    if (time[0] == 2 && time[1] >= 4) {
-                        break;
-                    }
+                if (time[0] == 2 && time[1] >= 4) {
+                    break;
+                }
 
-                    symmetricTimeCount++;
+                symmetricTimeCount++;
 
-                    if (showExecutionLog) {
-                        System.out.println("(" + symmetricTimeCount + ")" + " Symmetric time: " + time[0] + time[1] + ":" + time[1] + time [0]);
-                    }
+                if (showExecutionLog) {
+                    System.out.println("(" + symmetricTimeCount + ")" + " Symmetric time: " + time[0] + time[1] + ":" + time[1] + time [0]);
                 }
             }
         }
 
         return symmetricTimeCount;
     } 
-} 
+}
